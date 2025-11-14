@@ -1,0 +1,31 @@
+{
+  "environment": "development",
+  "logging": {
+    "level": "DEBUG",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "devices": {
+    "primary": {
+      "host": "localhost",
+      "port": 8000,
+      "workers": 1
+    },
+    "secondary": {
+      "host": "localhost",
+      "port": 8001,
+      "workers": 1
+    }
+  },
+  "frontend": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "security": {
+    "cors_origins": ["http://localhost:3000"],
+    "rate_limiting": {
+      "enabled": true,
+      "max_requests": 100,
+      "window_seconds": 60
+    }
+  }
+}

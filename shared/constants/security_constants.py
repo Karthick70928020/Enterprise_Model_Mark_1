@@ -1,0 +1,19 @@
+# Cryptographic Constants
+DEFAULT_KEY_SIZE = 2048
+HASH_ALGORITHM = "SHA-256"
+SIGNATURE_ALGORITHM = "RSA-PSS-SHA256"
+ENCRYPTION_ALGORITHM = "AES-256-GCM"
+
+# TOTP Constants
+TOTP_INTERVAL = 30  # seconds
+TOTP_DIGITS = 6
+
+# JWT Constants
+JWT_ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+# Security Headers
+CSP_HEADER = "default-src 'self'"
+HSTS_HEADER = "max-age=31536000; includeSubDomains"
+X_FRAME_HEADER = "DENY"
+X_CONTENT_HEADER = "nosniff"

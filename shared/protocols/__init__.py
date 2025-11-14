@@ -1,0 +1,1 @@
+"""Protocol definitions for inter-device communication"""

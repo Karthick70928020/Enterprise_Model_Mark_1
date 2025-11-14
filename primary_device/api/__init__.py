@@ -1,0 +1,1 @@
+"""API endpoints for primary device"""
